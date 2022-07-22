@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # Usage: ./run_test.sh [--no-witness] [-u|--update] input.asm
 
@@ -41,7 +41,7 @@ tmpfile=$(mktemp ./$1.tmp.XXXXXX.json)
 echo "Translating $1 to ZoKrates JSON input format..."
 
 # Translate asm to json input format.
-./asm_to_zokrates_input.py $1 > $tmpfile
+python3 asm_to_zokrates_input.py $1 > $tmpfile
 
 expected="$1.json"
 while ! cmp -s $expected $tmpfile ;

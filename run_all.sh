@@ -1,6 +1,6 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
-for t in ./newTests/*.asm
+for t in ./tests/*.asm
 do
 	./run_test.sh $t
 	echo ""
