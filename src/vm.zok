@@ -37,19 +37,19 @@ def main(u32 memoryHash, u32 stackHash, Program program, private Calldata callda
             if !s.running { s } else {
             if instr == STOP { s1 } else {
             if instr == ADD { s2 } else {
-			if instr == MUL { s3 } else {
-			if instr == SUB { s4 } else {
-			if instr == LT { s5 } else {
-			if instr == EQ { s6 } else {
-			if instr == JUMP { s7 } else {
-			if instr == JUMPI { s8 } else {
-			if instr == CALLDATALOAD { s9 } else {
-			if instr == POP { s10 } else {
-			if instr == PUSH32 { s11 } else {
-			if instr == DUP1 { s12 } else {
-			if instr == DUP2 { s13 } else {
-			if instr == DUP3 { s14 } else {
-			if instr == SWAP1 { s15 } else { 
+            if instr == MUL { s3 } else {
+            if instr == SUB { s4 } else {
+            if instr == LT { s5 } else {
+            if instr == EQ { s6 } else {
+            if instr == JUMP { s7 } else {
+            if instr == JUMPI { s8 } else {
+            if instr == CALLDATALOAD { s9 } else {
+            if instr == POP { s10 } else {
+            if instr == PUSH32 { s11 } else {
+            if instr == DUP1 { s12 } else {
+            if instr == DUP2 { s13 } else {
+            if instr == DUP3 { s14 } else {
+            if instr == SWAP1 { s15 } else { 
             error(s)
             }
             }
