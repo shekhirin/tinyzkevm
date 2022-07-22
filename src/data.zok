@@ -13,15 +13,13 @@ const u32 PROGRAM_ITERATIONS = 32;
 
 // ZoKrates does not support constants here yet.
 struct Stack {
-	//u32[STACK_SIZE] values;
-	u32[16] values;
+	u32[STACK_SIZE] values;
 	u32 length;
 }
 
 // ZoKrates does not support constants here yet.
 struct Memory {
-	//u32[MEMORY_SIZE] values;
-	u32[16] values;
+	u32[MEMORY_SIZE] values;
 }
 
 struct State {
@@ -34,14 +32,12 @@ struct State {
 
 // ZoKrates does not support constants here yet.
 struct Program {
-	//u32[PROGRAM_SIZE] instructions;
-	u32[32] instructions;
+	u32[PROGRAM_SIZE] instructions;
 }
 
 // ZoKrates does not support constants here yet.
 struct Calldata {
-	//u32[CALLDATA_SIZE] values;
-	u32[32] values;
+	u32[CALLDATA_SIZE] values;
 }
 
 /*******************/
